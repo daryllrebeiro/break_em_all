@@ -1,0 +1,36 @@
+/* Style for the canvas */
+canvas {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+
+/* Style for the paddle */
+.paddle {
+    background-color: #0095DD;
+}
+
+/* Style for the ball */
+.ball {
+    background-color: #0095DD;
+}
+
+/* Style for the bricks */
+.brick-row {
+    display: flex;
+}
+
+.brick {
+    background-color: #ff0000;
+    /* Set the background color of the brick */
+    border: 1px solid #000000;
+    /* Add a border to the brick */
+}
+
+/* Optional styles to center the game board */
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

@@ -1,0 +1,13 @@
+<canvas #gameCanvas [attr.width]="canvasWidth" [attr.height]="canvasHeight" (mousemove)="onMouseMove($event)">
+    Your browser does not support the HTML5 canvas element.
+</canvas>
+
+<!-- Use ngFor to loop through the rows and columns of bricks -->
+<div *ngFor="let brickRow of bricks">
+    <div *ngFor="let brick of brickRow">
+        <app-brick [x]="brick.x" [y]="brick.y" [width]="brickWidth" [height]="brickHeight"></app-brick>
+    </div>
+</div>
+
+<app-paddle [x]="paddleX" [y]="canvasHeight - paddleHeight" [width]="paddleWidth" [height]="paddleHeight">
+</app-paddle>

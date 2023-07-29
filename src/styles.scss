@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Styling for the game board canvas */
+canvas {
+    border: 2px solid #333;
+    background-color: #fff;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Styling for the ball */
+.ball {
+    background-color: red;
+    border-radius: 50%;
+    animation: ball-bounce 0.5s infinite
+}
+
+/* Styling for the bricks */
+.brick {
+    width: 60px;
+    height: 20px;
+    background-color: #0095DD;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+/* Styling for the paddle */
+.paddle {
+    background-color: #0095DD;
+    border-radius: 8px;
+}
+
+/* Optional: Add animation for the ball */
+@keyframes ball-bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
